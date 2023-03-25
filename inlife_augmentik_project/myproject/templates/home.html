@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.p-logo {
+    font-size: 24px;
+    font-family: "Roboto";
+    text-align: center;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #880ED4;
+    border-radius: 2px;
+}
+
+.banner-section-bg-container {
+    background-image: url("https://img.freepik.com/free-vector/colorful-futuristic-background-with-shiny-particles_52683-42650.jpg?w=996&t=st=1679761746~exp=1679762346~hmac=213334c14dc8df1ad7820766793a8d84b1b79698b26253af4840c47cb678ac4a");
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.banner-caption {
+    color: #f5f7fa;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.custom-button {
+    color: white;
+    background-color: #B24BF3;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.custom-outline-button {
+    color: #B24BF3;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #880ED4;
+    border-radius: 8px;
+}
+
+.wcu-section {
+    background-color: #191a1d;
+}
+
+.wcu-section-heading {
+    color: #E8E8E8;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.wcu-section-description {
+    color: #A3A3A3;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.wcu-card {
+    text-align: center;
+    background-color: #191a1d;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.wcu-card-image {
+    width: 87px;
+    height: 90px;
+}
+
+.wcu-card-title {
+    color: #E8E8E8;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.wcu-card-description {
+    color: #A3A3A3;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.offers {
+    color: #880ED4;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.follow-us-section {
+    background-color: #191a1d;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #E8E8E8;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.icon {
+    color: #880ED4;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #3B3B3B;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand p-logo" href="/"> INLIF_GAYA3
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="/">
+                    Home <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="http://127.0.0.1:8000/admin/login/?next=/admin/">Admin</a>
+                <a class="nav-link" href="https://www.linkedin.com/in/gayathri-s-34a994262/">About Me</a>
+                <a class="nav-link" href="https://github.com/GAYATHRI-3200">Projects</a>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                <div>
+                    <button class="custom-outline-button" onclick="window.location.href='{% url 'login' %}'; " type="submit">SignIn</button>
+                    <button class="custom-button" onclick="window.location.href='{% url 'register' %}'; " type="submit">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">Discover,and Collect Extraordinary<span class="offers">Monster,NFTS</span></h1>
+            <p class="banner-caption mb-4">Explore exclusive drops by the most in-demand creators, trade with other collectors in the Marketplace, and mint your own NFTs all in one place.</p>
+            <button class="custom-outline-button" onclick="window.location.href='{% url 'login' %}'; " type="submit">SignIn</button>
+            <button class="custom-button" onclick="window.location.href='{% url 'register' %}'; " type="submit">SignUp</button>
+        </div>
+    </div>
+    <div class="wcu-section pt-5 pb-5" id="wcuSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">Why Choose Us?</h1>
+                    <p class="wcu-section-description">
+                        Buy NFTs from a leading Marketplace featuring top projects
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9648/9648617.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Setup your wallet</h1>
+                        <p class="wcu-card-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua                    
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9648/9648617.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Add Your NFTs</h1>
+                        <p class="wcu-card-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9648/9648617.png" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">List Them for Sale</h1>
+                        <p class="wcu-card-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center">
+                        {% for link in social_media_links %}
+                        {% if link.name == 'Facebook' %}
+                        <div class="follow-us-icon-container">
+                            <a href="{{ link.link }}" target="_blank"><i class="fab fa-facebook icon"></i></a>
+                        </div>
+                        {% endif %}
+                        {% if link.name == 'Instagram' %}                        
+                        <div class="follow-us-icon-container">
+                            <a href="{{ link.link }}" target="_blank"><i class="fab fa-instagram icon"></i></a>
+                        </div>
+                        {% endif %}
+                        {% if link.name == 'LinkedIn' %}                        
+                        <div class="follow-us-icon-container">
+                            <a href="{{ link.link }}" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+                        </div>
+                        {% endif %}
+                        {% if link.name == 'Twitter' %}                    
+                        <div class="follow-us-icon-container">
+                            <a href="{{ link.link }}" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+  
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a class="p-logo" href="/"> INLIF_GAYA3</a>
+                    <h1 class="footer-section-mail-id">gayugaythri3200@gmail.com</h1>
+                    <p class="footer-section-address">
+                        123 Bangalore, Karnataka, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
